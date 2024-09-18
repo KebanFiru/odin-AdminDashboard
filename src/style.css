@@ -9,6 +9,7 @@
     flex-direction: row;
     height: 1200px;
     width: 1800px;
+
 }
 .RightSide{
     display: flex;
@@ -23,12 +24,17 @@
     gap: 20px;
     background-color: #0284c7;
 }
-.Bottom{
-    height: 70%;
-
+.RightBottom{
+    height: 80%;
 }
-.Top{
-    height: 30%;
+.RightTop{
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 150px);
+}
+.RightTop>div{
+    border: 1px solid red;
 }
 .MidLeft,.BottomLeft,.TopLeft{
     display: flex;
@@ -37,4 +43,26 @@
     padding-top: 20px;
     flex-direction: column;
     color:#f0f9ff ;
+}
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.ButtonContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+button{
+    height: 45px;
+    width: 120px;
+    border-radius: 50px;
+    background-color:#0284c7 ; 
+    color:#f0f9ff ;
+    box-shadow: 0;
 }
