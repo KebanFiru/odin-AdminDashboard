@@ -24,7 +24,7 @@
 }
 .RightBottom{
     height: 80%;
-    background-color:#a1a1aa ;
+    background-color:#d6d3d1 ;
     display: flex;
     flex-direction: row;
 }
@@ -73,7 +73,6 @@ button{
 .Announcments, .Trending{
     height: 45%;
 }
-
 .RightBottomLeft{
     display: grid;
     padding: 30px;
@@ -81,4 +80,12 @@ button{
     grid-template-columns: repeat(2, 1fr ) ;
     grid-template-rows:repeat(3, 1fr) ;
     gap: 20px;
+}
+.RightBottomLeft > div{
+    padding: 20px;
+    background-color:white ;
+    font-size: 13px;
+}
+.Text{
+    color: #a8a29e;
 }
