@@ -1,35 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 *{
     font-family:'roboto';
     font-weight: bold;
 }   
+button{
+    height: 45px;
+    width: 120px;
+    border-radius: 50px;
+    background-color:#0284c7 ; 
+    color:#f0f9ff ;
+    box-shadow: 0;
+}
+hr{
+    width: 95%;
+}
+.Text{
+    color: #a8a29e;
+}
+
+
 .Container{
     display: flex;
     flex-direction: row;
     height: 1200px;
     width: 1800px;
 }
+
+
 .RightSide{
     display: flex;
     flex-direction: column;
     width: 80%;
-}
-.LeftSide{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #0284c7;
-}
-.RightBottom{
-    height: 80%;
-    background-color:#d6d3d1 ;
-    display: flex;
-    flex-direction: row;
-}
-.RightBottomLeft{
-    width: 70%;
 }
 .RightTop{
     display: grid;
@@ -37,6 +40,52 @@
     grid-template-rows: repeat(2, 150px);
     position: relative;
     padding: 10px;
+}
+.RightBottom{
+    height: 80%;
+    background-color:#d6d3d1 ;
+    display: flex;
+    flex-direction: row;
+}
+.RightBottomRight{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 23%;
+}
+.Announcments, .Trending{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color:white ;
+}
+.RightBottomRight > div{
+    padding: 20px;
+    font-size: 11px;
+}
+
+
+.RightBottomLeft{
+    width: 70%;
+    display: grid;
+    padding: 30px;
+    padding-top: 60px;
+    grid-template-columns: repeat(2, 1fr ) ;
+    grid-template-rows:repeat(3, 1fr) ;
+    gap: 20px;
+}
+.RightBottomLeft > div{
+    padding: 20px;
+    background-color:white ;
+    font-size: 13px;
+}
+.LeftSide{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #0284c7;
 }
 .MidLeft,.BottomLeft,.TopLeft{
     display: flex;
@@ -55,37 +104,14 @@
     bottom: 0;
     right: 0;
 }
-button{
-    height: 45px;
-    width: 120px;
-    border-radius: 50px;
-    background-color:#0284c7 ; 
-    color:#f0f9ff ;
-    box-shadow: 0;
-}
-.RightBottomRight{
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 23%;
-}
-.Announcments, .Trending{
-    height: 45%;
-}
-.RightBottomLeft{
-    display: grid;
-    padding: 30px;
-    padding-top: 60px;
-    grid-template-columns: repeat(2, 1fr ) ;
-    grid-template-rows:repeat(3, 1fr) ;
-    gap: 20px;
-}
-.RightBottomLeft > div{
-    padding: 20px;
-    background-color:white ;
-    font-size: 13px;
-}
-.Text{
-    color: #a8a29e;
-}
+
+
+
+
+
+
+
+
+
+
+
