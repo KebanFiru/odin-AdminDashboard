@@ -32,7 +32,6 @@
     width: 70%;
 }
 .RightTop{
-    height: 20%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2, 150px);
@@ -50,15 +49,11 @@
 .Buttons{
     display: flex;
     flex-direction: row;
-}
-.ButtonContainer{
-    display: flex;
-    flex-direction: row;
     gap: 30px;
     position: absolute;
-    bottom: 1;
+    padding: 10px;
+    bottom: 0;
     right: 0;
-
 }
 button{
     height: 45px;
@@ -69,6 +64,21 @@ button{
     box-shadow: 0;
 }
 .RightBottomRight{
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
+    gap: 50px;
+    width: 23%;
+}
+.Announcments, .Trending{
+    height: 45%;
+}
+
+.RightBottomLeft{
+    display: grid;
+    padding: 30px;
+    padding-top: 60px;
+    grid-template-columns: repeat(2, 1fr ) ;
+    grid-template-rows:repeat(3, 1fr) ;
+    gap: 20px;
 }
