@@ -9,13 +9,11 @@
     flex-direction: row;
     height: 1200px;
     width: 1800px;
-
 }
 .RightSide{
     display: flex;
     flex-direction: column;
     width: 80%;
-
 }
 .LeftSide{
     width: 20%;
@@ -26,15 +24,20 @@
 }
 .RightBottom{
     height: 80%;
+    background-color:#a1a1aa ;
+    display: flex;
+    flex-direction: row;
+}
+.RightBottomLeft{
+    width: 70%;
 }
 .RightTop{
     height: 20%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2, 150px);
-}
-.RightTop>div{
-    border: 1px solid red;
+    position: relative;
+    padding: 10px;
 }
 .MidLeft,.BottomLeft,.TopLeft{
     display: flex;
@@ -47,16 +50,15 @@
 .Buttons{
     display: flex;
     flex-direction: row;
-    position: relative;
 }
 .ButtonContainer{
     display: flex;
     flex-direction: row;
     gap: 30px;
-    align-self: flex-end;
     position: absolute;
-    bottom: 0;
+    bottom: 1;
     right: 0;
+
 }
 button{
     height: 45px;
@@ -65,4 +67,8 @@ button{
     background-color:#0284c7 ; 
     color:#f0f9ff ;
     box-shadow: 0;
+}
+.RightBottomRight{
+    display: flex;
+    flex-direction: column;
 }
