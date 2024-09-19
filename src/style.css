@@ -16,6 +16,9 @@ button{
 hr{
     width: 95%;
 }
+:root{
+    --grey-color: #d6d3d1;
+}
 .Text{
     color: #a8a29e;
 }
@@ -41,9 +44,36 @@ hr{
     position: relative;
     padding: 10px;
 }
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+}
+.Profile{
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top:0 ;
+}
+.SearchBar{
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.Shape{
+    background-color: var(--grey-color);
+    width: 800px;
+    height: 30px;
+    border-radius: 50px;
+}
+
 .RightBottom{
     height: 80%;
-    background-color:#d6d3d1 ;
+    background-color:var(--grey-color) ;
     display: flex;
     flex-direction: row;
 }
@@ -60,12 +90,16 @@ hr{
     display: flex;
     flex-direction: column;
     background-color:white ;
+    border-radius: 10px;
 }
 .RightBottomRight > div{
     padding: 20px;
     font-size: 11px;
 }
-
+.Trending > div{
+    padding-left: 70px;
+    font-size: 18px;
+}
 
 .RightBottomLeft{
     width: 70%;
@@ -80,7 +114,10 @@ hr{
     padding: 20px;
     background-color:white ;
     font-size: 13px;
+    border-radius: 10px;
 }
+
+
 .LeftSide{
     width: 20%;
     display: flex;
@@ -96,15 +133,7 @@ hr{
     flex-direction: column;
     color:#f0f9ff ;
 }
-.Buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    position: absolute;
-    padding: 10px;
-    bottom: 0;
-    right: 0;
-}
+
 
 
 
